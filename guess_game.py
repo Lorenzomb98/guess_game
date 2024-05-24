@@ -13,7 +13,7 @@ def run_guess(guess, answer):
             print('Hey bozo, I said 1~10')
             return False
     except TypeError as err:
-        print('Please enter a number. Run it again bozo')
+        print('Please enter a number. Run it again bozoman')
         return err
 
 
