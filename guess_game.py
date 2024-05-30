@@ -10,16 +10,16 @@ def run_guess(guess, answer):
             else:
                 print('Sorry, try again')
         else:
-            print('Hey bozo, I said 1~10')
+            print('Hey I said 1~10')
             return False
     except TypeError as err:
-        print('Please enter a number. Run it again bozoman')
+        print('Please enter a number. Run it again')
         return err
 
 
 if __name__ == '__main__':
     answer = random.randint(1, 10)
     while True:
-        guess = int(input('Guess a number 1~10: '))
+        guess = int(input('Guess a number from 1~10: '))
         if (run_guess(guess, answer)):
             break
